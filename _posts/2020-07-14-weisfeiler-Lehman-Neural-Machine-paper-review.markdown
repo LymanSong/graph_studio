@@ -7,7 +7,7 @@ tags:
   - Weisfeiler-Lehman
 use_math: true
 ---
-
+test
 
 본 포스트는 그래프의 Link prediction 중 휴리스틱을 이용하지 않고 subgraph를 입력으로 Neural Net을 통해 학습시킨 논문(Muhan Zhang and Yixin Chen. 2017. Weisfeiler-Lehman Neural Machine for Link Prediction. In Proceedings of KDD ’17, Halifax, NS, Canada, August 13-17, 2017, 9 pages., [원본 논문](https://dl.acm.org/doi/10.1145/3097983.3097996)) 의 내용을 한국어로 옮긴 것이다. 의역이 상당히 많고 용어에 대한 해석에 대해 한계가 있을 수 있다.
 
