@@ -25,9 +25,8 @@ texture:
 
   # generate social links in footer
   social_links:
-    twitter: thelehhman
-    github:  thelehhman
-    linkedIn: in/thelehhman
+    github: https://github.com/LymanSong/graph_studio 
+    linkedIn: https://www.linkedin.com/in/jaeyoung-song-0ab5b4163/
     rss: rss
  
 
@@ -42,3 +41,10 @@ texture:
 plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
