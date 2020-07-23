@@ -76,7 +76,7 @@ WL 알고리즘의 기본 방향은
 
 자세히 서술하자면 각 버텍스는 초기에 모두 같은 라벨을 부여받고 step 1에서 자신의 1-hop 이웃들의 라벨을 이어 붙여 signature string을 만든다. 모든 버텍스의 signature string을 오름차순으로 정렬하고 차례대로 새 라벨을 부여받는다. 이 때 같은 라벨들엔 같은 값을 부여한다. 이 과정을 버텍스들의 color가 바뀌지 않을 때까지 반복한다.
 
-![PALETTE WL 알고르즘 예시](C:\Users\user\Desktop\실내\GNN,GCN\Link Prediction\Weisfeiler-Lehman Neural Machine for Link Prediction\fig3 WL algo.png)
+![PALETTE WL 알고리즘 예시](https://user-images.githubusercontent.com/52984138/88245035-98615180-ccd0-11ea-9678-bcd89060dd5b.png)
 
 <center> Fig3. PALETTE WL 알고리즘 예시</center>
 
@@ -110,7 +110,7 @@ Subgraph pattern encoding은 각 Enclosing subgraph를 특정한 버텍스 order
 
 
 
-![img4](C:\Users\user\Desktop\실내\GNN,GCN\Link Prediction\Weisfeiler-Lehman Neural Machine for Link Prediction\fig4 Subgraph pattern encoding.png)
+![img4](https://user-images.githubusercontent.com/52984138/88245062-afa03f00-ccd0-11ea-9ff9-5e27fa202bf4.png)
 
 <center> Fig4. WLNM의 실행 과정: 최좌측부터 enclosing subgraph를 뽑아낸 후 subgraph 패턴을 인코딩하고(중간 3단계), 뉴럴넷을 이용해 학습을 진행한다.</center>
 
@@ -155,7 +155,7 @@ $$
 
 이 모델을 PALETTE\_WL이라고 명명했으며 전체 알고리즘은 알고리즘 1과 같다.
 
-<img src="C:\Users\user\Desktop\실내\GNN,GCN\Link Prediction\Weisfeiler-Lehman Neural Machine for Link Prediction/alg1.png" alt="alg1" style="zoom:85%;" />
+<img src="https://user-images.githubusercontent.com/52984138/88245074-c050b500-ccd0-11ea-9bef-80ac7b5683bc.PNG" alt="alg1" style="zoom:85%;" />
 
 
 
@@ -187,7 +187,7 @@ Enclosing subgraph $G(V_K)$가 주어졌을 때, WLNM은 이것을 버텍스 ord
 
 Figure 4는 두개의 인공적인 데이터셋과 실제 데이터인 USAir-network의 그래프와 Enclosing Subgraph들, 그리고 네트워크에서 학습된 가중치행렬을 나타내고 있다. 각 네트워크의 가중치행렬을 비교해보면 상이한 네트워크 사이에서도 비슷하게 형성되는 것을 확인할 수 있다. 또한 PALETTE-WL 알고리즘을 통해 형성된 Eclosing subgraph의 라벨을 보면 대상링크는 항상 color 1과 2를 가지며 다른 라벨들을 그래프 내에서 구조적 역할에 따라 color를 부여받으며 enclosing subgraph의 방향성을 유지하는 것을 확인할 수 있다.
 
-![fig4](C:\Users\user\Desktop\실내\GNN,GCN\Link Prediction\Weisfeiler-Lehman Neural Machine for Link Prediction\fig 5 visualization.PNG)
+![fig4](https://user-images.githubusercontent.com/52984138/88245092-d0689480-ccd0-11ea-9d52-bf3a14b22f05.PNG)
 
 <center> Fig 4. 좌측: 3-regular graph, 가운데: preferential attachment graph, 우측: USAir network</center>
 
@@ -195,7 +195,7 @@ Figure 4는 두개의 인공적인 데이터셋과 실제 데이터인 USAir-net
 
 다음으로 다양한 실제 데이터셋을 사용한 다른 휴리스틱과의 성능, 퍼포먼스 비교이다. Figure 5는 그 결과를 보여주는데 거의 모든 부분에서 WLNM이 다른 휴리스틱보다 좋은 성능을 보이며 특히 Power와 Router는 다른 휴리스틱에서 볼 수 없는 뛰어난 성능을 보여준다.
 
-![fig4](C:\Users\user\Desktop\실내\GNN,GCN\Link Prediction\Weisfeiler-Lehman Neural Machine for Link Prediction\fig 6 results comparison.PNG)
+![fig4](https://user-images.githubusercontent.com/52984138/88245105-dd858380-ccd0-11ea-8d1b-351dc060ee6f.PNG)
 
 <center> Fig 5. 다양한 데이터셋에 대한 다른 휴리스틱과의 비교(AUC)</center>
 
