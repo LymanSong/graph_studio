@@ -21,12 +21,12 @@ texture:
   date_format: "%b %-d, %Y"
   style: black
   showNav: false
-  showPicker: true
+  showPicker: false
 
   # generate social links in footer
   social_links:
-    github: https://github.com/LymanSong/graph_studio 
-    linkedIn: https://www.linkedin.com/in/jaeyoung-song-0ab5b4163/
+    github: LymanSong/graph_studio 
+    linkedIn: in/jaeyoung-song-0ab5b4163/
     rss: rss
  
 

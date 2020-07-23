@@ -59,7 +59,7 @@ Weisfeiler-Lehman(WL) 알고리즘은 그래프 위상에 기반한 버텍스 �
 
 $$ A_{(i,j)}=\begin{cases} 1 \quad if \quad (i,j)\in E \\ 0 {} \quad \textit{otherwise}\ \end{cases}$$
 
-이며 $G$가 무방향 그래프라면 $A$는 symmetric하지만 방향 그래프라면 $A_(i,j)\ne A_(j,i)$이다. 버텍스 $x$의 이웃버텍스 집합을 표기하기 위해 $\Gamma^d(x)$를 $d$-hop 거리에 있는, 즉 $x$와의 거리가 $d$보다 작거나 같은 버텍스의 집합으로 한다.
+이며 $G$가 무방향 그래프라면 $A$는 symmetric하지만 방향 그래프라면 $A_{(i,j)}\ne A_{(j,i)}$이다. 버텍스 $x$의 이웃버텍스 집합을 표기하기 위해 $\Gamma^d(x)$를 $d$-hop 거리에 있는, 즉 $x$와의 거리가 $d$보다 작거나 같은 버텍스의 집합으로 한다.
 
 
 
