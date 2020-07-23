@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
   {%- include head.html -%}
-{% if page.use_math %}
-  {% include mathjax_support.html %}
-{% endif %}
 </head>
 <body>
-  <header class="texture-{{ site.texture.style }}">
+  <header class="texture-{{ site.tex
+ture.style }}">
     <div class="container">
       {%- include nav.html -%}
     </div>
@@ -34,11 +32,6 @@
             (d.head || d.body).appendChild(s);
           })();
         </script>
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-    </script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/math...">
-    </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
       {%- endif -%}
     </div>
